@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/Steps/',
-  outDir: './dist',
   title: "Steps",
   description: "Think big, but start small",
   themeConfig: {
