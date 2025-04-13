@@ -5,21 +5,26 @@ layout: home
 hero:
   name: "Steps"
   text: "Think big, but start small"
-  tagline: My great project tagline
+  image:
+    src: ./public/logo.svg
+    alt: VitePress Logo
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Quick Start
+      link: /Vitepress/initialize
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Todos
+      link: /Todos/todos
 
 features:
-  - title: Feature A
+  - icon: ⚡️
+    title: VitePress 学习
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - icon: 🛠️
+    title: VitePress 插件
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - icon: 📦
+    title: 组件库
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

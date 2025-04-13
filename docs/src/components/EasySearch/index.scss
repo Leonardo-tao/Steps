@@ -1,0 +1,50 @@
+:deep(.el-select) {
+  width: 150px;
+}
+
+:deep(.el-input__wrapper),
+:deep(.el-input-number) {
+  width: 150px;
+}
+
+:deep(.el-link) {
+  margin-right: 14px;
+}
+
+:deep(.el-form--inline .el-form-item) {
+  margin-right: 12px;
+  margin-bottom: 0;
+
+  &:last-child {
+      margin-right: 0;
+  }
+}
+
+:deep(.el-select__popper) {
+  z-index: 9999 !important;
+}
+
+.condition-container {
+  // max-height: 280px;
+  min-height: 60px; // 新增最小高度
+  // overflow-y: auto;
+  padding: 8px;
+  position: relative; // 新增定位
+
+  .empty-placeholder {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #999;
+  }
+
+  &:deep(.el-form--inline .el-form-item) {
+      margin-right: 12px;
+      margin-bottom: 18px;
+  }
+}
+
+.opts {
+  margin-top: 4px;
+}
