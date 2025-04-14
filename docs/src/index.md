@@ -6,12 +6,12 @@ hero:
   name: "Steps"
   text: "Think big, but start small"
   image:
-    src: ./public/logo.svg
+    src: /logo.svg
     alt: VitePress Logo
   actions:
     - theme: brand
       text: Quick Start
-      link: /Vitepress/initialize
+      link: /VitePress/initialize
     - theme: alt
       text: Todos
       link: /Todos/todos

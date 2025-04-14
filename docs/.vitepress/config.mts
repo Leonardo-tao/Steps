@@ -12,7 +12,7 @@ export default defineConfig({
   srcDir: "./src",
   head:[['link',{rel:'icon',href:'/favicon.ico'}]],
   themeConfig: {
-    logo: { src: "/public/favicon.ico", width: 24, height: 24 },
+    logo: { src: "/favicon.ico", width: 24, height: 24 },
     nav,
     sidebar,
     outline: {
