@@ -29,10 +29,10 @@ export default defineConfig({
       text: "在 GitHub 上编辑此页",
     },
     lastUpdated: {
-      text: "Updated at",
+      text: "最后更新于",
       formatOptions: {
-        dateStyle: "full",
-        timeStyle: "medium",
+        dateStyle: "short",
+        timeStyle: "short",
       },
     },
     search: {
@@ -59,16 +59,3 @@ export default defineConfig({
     ],
   },
 });
-
-export interface LastUpdatedOptions {
-  /**
-   * @default 'Last updated'
-   */
-  text?: string;
-
-  /**
-   * @default
-   * { dateStyle: 'short',  timeStyle: 'short' }
-   */
-  formatOptions?: Intl.DateTimeFormatOptions & { forceLocale?: boolean };
-}
