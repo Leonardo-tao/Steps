@@ -1,9 +1,13 @@
-/* .vitepress\theme\style\blur.css */
+$backgroundImage: (
+  light: radial-gradient(transparent 1px, #fff 1px),
+  dark: radial-gradient(transparent 1px, #000 1px)
+);
+
 :root {
   /* 首页下滑后导航透明 */
   .VPNavBar:not(.has-sidebar):not(.home.top) {
     background-color: rgba(255, 255, 255, 0);
-    background-image: radial-gradient(transparent 1px, #fff 1px);
+    background-image: $backgroundImage;
     background-size: 4px 4px;
     backdrop-filter: saturate(50%) blur(4px);
   }
@@ -31,7 +35,7 @@
     /* 文档页导航中间透明 */
     .VPNavBar:not(.home.top) .content-body {
       background-color: rgba(255, 255, 255, 0);
-      background-image: radial-gradient(transparent 1px, #fff 1px);
+      background-image: $backgroundImage;
       background-size: 4px 4px;
       backdrop-filter: saturate(50%) blur(10px);
     }

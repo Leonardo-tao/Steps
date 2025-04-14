@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
-import { vitepressDemoPlugin } from 'vitepress-demo-plugin'; 
+import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+
 import { nav, sidebar } from './router'
 
 // https://vitepress.dev/reference/site-config
@@ -40,6 +42,7 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
+      md.use(groupIconMdPlugin) //代码组图标
       md.use(vitepressDemoPlugin, {
         stackblitz: {
           show: true,
@@ -49,6 +52,11 @@ export default defineConfig({
         },
       });
     },
+  },
+  vite: { 
+    plugins: [
+      groupIconVitePlugin() //代码组图标
+    ],
   },
 });
 

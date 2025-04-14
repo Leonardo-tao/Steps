@@ -16,7 +16,7 @@
 
 3. 然后在 `.github/workflows` 目录下创建一个 `deploy.yml` 文件，内容如下：
 
-```yaml
+```yaml [.github/workflows/deploy.yml]
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
 #
 name: Deploy VitePress site to Pages

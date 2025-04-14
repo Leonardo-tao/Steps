@@ -7,8 +7,9 @@ import ElementPlus from "element-plus"; // 引入组件库
 import "element-plus/dist/index.css"; // 引入样式
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'// 引入图标库
 
-import './style/var.css';
-import './style/blur.css';
+import 'virtual:group-icons.css' //代码组样式
+import './style/var.scss';
+import './style/blur.scss';
 
 export default {
   ...Theme,
