@@ -14,4 +14,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     text: "Components",
     items: [{ text: "easySearch", link: "/easySearch" }],
   },
+  {
+    text: "Utils",
+    items: [{ text: "easyTime", link: "/utils/easyTime/easyTime" }],
+  },
 ];
