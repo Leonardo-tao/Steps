@@ -12,7 +12,7 @@ export default defineConfig({
   description: "Think big, but start small",
   lastUpdated: true,
   srcDir: "./src",
-  head:[['link',{rel:'icon',href:'/favicon.ico'}]],
+  head:[['link',{rel:'icon',href:'/Steps/favicon.ico'}]],
   themeConfig: {
     logo: { src: "/favicon.ico", width: 24, height: 24 },
     nav,
