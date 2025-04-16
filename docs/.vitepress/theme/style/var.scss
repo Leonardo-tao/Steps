@@ -2,7 +2,7 @@
   /* 标题 */
   --vp-home-hero-name-color: transparent;
   /* 渐变色 */
-  --vp-home-hero-name-background: linear-gradient(135deg, #76c4fd 10%, #bbe2fe 100%);
+  --vp-home-hero-name-background: linear-gradient(135deg, #76c4fd 100%, #bbe2fe 100%);
 
   /* 图标背景 */
   --vp-home-hero-image-background-image: linear-gradient(135deg, rgb(226, 163, 255), rgb(118, 179, 255));
@@ -29,46 +29,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.vp-doc .content-body {
-  background-color: red;
-  color: red;
-}
-
-// 新增表格样式
-.vp-doc table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-
-  // 恢复表格结构
-  thead, tbody {
-    display: table-header-group; // 恢复默认值
-    width: 100%;
-  }
-  
-  tr {
-    border-top: none;
-    display: table-row; // 恢复标准表格行显示
-  }
-
-  th, td {
-    width: auto;
-    white-space: normal;
-    text-align: left;
-    padding: 12px 16px;
-    border: 1px solid var(--vp-c-divider);
-    box-sizing: border-box; // 确保边框计算在宽度内
-  }
-
-  th {
-    background-color: var(--vp-c-bg-soft);
-  }
-
-  @media (max-width: 768px) {
-    th, td {
-      padding: 8px 12px;
-      font-size: 14px;
-    }
-  }
+.language-title {
+  display: block !important;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0,0,0,0.1);
+  font-family: monospace;
 }
