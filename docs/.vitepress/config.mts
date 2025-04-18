@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
 import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
-
 import { nav, sidebar } from './router'
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,7 +14,7 @@ export default defineConfig({
   description: "Think big, but start small",
   lastUpdated: true,
   srcDir: "./src",
-  head:[['link',{rel:'icon',href:'/Steps/favicon.ico'}]],
+  head: [["link", { rel: "icon", href: "/Steps/favicon.ico" }]],
   themeConfig: {
     logo: { src: "/favicon.ico", width: 24, height: 24 },
     nav,
@@ -41,6 +44,7 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
+      md.use(groupIconMdPlugin);
       md.use(vitepressDemoPlugin, {
         stackblitz: {
           show: true,
@@ -50,5 +54,8 @@ export default defineConfig({
         },
       });
     },
+  },
+  vite: {
+    plugins: [groupIconVitePlugin()],
   },
 });

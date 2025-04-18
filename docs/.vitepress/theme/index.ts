@@ -8,6 +8,7 @@ import Confetti from "./components/Confetti.vue"; // 引入五彩纸屑样式组
 
 import "element-plus/dist/index.css"; // 引入 elementPlus 样式
 import './style/index.scss'; // 引入自定义样式
+import "virtual:group-icons.css"; // 引入代码组图标库样式
 
 export default {
   ...Theme,

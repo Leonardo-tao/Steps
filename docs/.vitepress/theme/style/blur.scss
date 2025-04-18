@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $backgroundImage: (
   light: radial-gradient(transparent 1px, #fff 1px),
   dark: radial-gradient(transparent 1px, #1B1B1F 1px)
@@ -8,7 +10,7 @@ $backgroundImage: (
   /* 首页下滑后导航透明 */
   .VPNavBar:not(.has-sidebar):not(.home.top) {
     background-color: rgba(255, 255, 255, 0);
-    background-image: map-get($backgroundImage, light);
+    background-image: map.get($backgroundImage, light);
     background-size: 4px 4px;
     backdrop-filter: saturate(50%) blur(4px);
   }
@@ -36,7 +38,7 @@ $backgroundImage: (
     /* 文档页导航中间透明 */
     .VPNavBar:not(.home.top) .content-body {
       background-color: rgba(255, 255, 255, 0);
-      background-image: map-get($backgroundImage, light);
+      background-image: map.get($backgroundImage, light);
       background-size: 4px 4px;
       backdrop-filter: saturate(50%) blur(10px);
     }
@@ -53,13 +55,13 @@ $backgroundImage: (
 .dark {
   /* 首页下滑后导航透明 - 暗色 */
   .VPNavBar:not(.has-sidebar):not(.home.top) {
-    background-image: map-get($backgroundImage, dark);
+    background-image: map.get($backgroundImage, dark);
   }
 
   @media (min-width: 960px) {
     /* 文档页导航中间透明 - 暗色 */
     .VPNavBar:not(.home.top) .content-body {
-      background-image: map-get($backgroundImage, dark);
+      background-image: map.get($backgroundImage, dark);
     }
   }
 }
