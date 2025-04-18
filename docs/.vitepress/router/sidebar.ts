@@ -12,10 +12,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   },
   {
     text: "Components",
-    items: [{ text: "easySearch", link: "/easySearch" }],
+    items: [{ text: "easySearch", link: "/Components/easySearch" }],
   },
   {
     text: "Utils",
-    items: [{ text: "easyTime", link: "/utils/easyTime/easyTime" }],
+    items: [{ text: "easyTime", link: "/Utils/easyTime/easyTime" }],
   },
 ];

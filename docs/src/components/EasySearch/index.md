@@ -5,7 +5,7 @@
 ## 模板预览
 
 通过给 `easySearch` 传入 `exposingFields` ，展示外面的默认筛选项
-<demo vue="./components/EasySearch/demo.vue" scope="global" />
+<demo vue="./demo.vue" scope="global" />
 
 <br>
 
@@ -13,7 +13,7 @@
 
 点击 `更多` 展开弹出框，增加更多筛选项，逻辑符号默认为 `包含`<br>
 <small>可通过 `一键生成` 按钮，快速生成所有字段的筛选项</small>
-<demo vue="./components/EasySearch/index.vue" scope="global" />
+<demo vue="./index.vue" scope="global" />
 
 ## API
 

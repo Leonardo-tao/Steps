@@ -20,11 +20,15 @@ features:
   - icon: ⚡️
     title: VitePress 学习
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /VitePress/initialize
   - icon: 🛠️
     title: VitePress 插件
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /VitePress/plugins
   - icon: 📦
     title: 组件库
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /Components/EasySearch
 ---
 
+<DataPanel />
