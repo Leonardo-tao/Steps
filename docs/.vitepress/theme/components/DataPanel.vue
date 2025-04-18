@@ -8,7 +8,7 @@
 				<span class="text">
 					本站总访问量 <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
 				</span>
-				<img src="/Steps/heart.gif" alt="heart" width="50" height="50" />
+				<img src="/heart.gif" alt="heart" width="50" height="50" />
 				<span class="text">
 					本站访客数 <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
 				</span>
