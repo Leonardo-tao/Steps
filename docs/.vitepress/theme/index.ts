@@ -1,5 +1,4 @@
 import Theme from "vitepress/theme";
-
 import mediumZoom from 'medium-zoom'; // 引入放大镜
 import { nextTick, onMounted, watch } from 'vue';
 import { inBrowser, useData, useRoute } from 'vitepress';
@@ -15,16 +14,19 @@ import 'nprogress-v2/dist/index.css'; // 进度条样式
 import 'virtual:group-icons.css'; //代码组样式
 import './style/var.scss';  // 引入全局样式
 import './style/blur.scss'; // 引入毛玻璃效果样式
+import "element-plus/dist/index.css"; // 引入 elementPlus 样式
+import './style/index.scss'; // 引入自定义样式
+import Confetti from "./components/Confetti.vue"; // 引入五彩纸屑样式组件
+
 
 export default {
   ...Theme,
   enhanceApp({ app, router }) {
     app.use(ElementPlus); // 注册组件库
     app.component('DataPanel' , DataPanel) // 注册不蒜子组件
-    
     // 注册图标库
     for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
-      app.component(key, component)
+      app.component(key, component);
     }
 
     if(inBrowser) {

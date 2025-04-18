@@ -32,3 +32,5 @@ features:
 ---
 
 <DataPanel />
+<Confetti style="confetti" />
+
