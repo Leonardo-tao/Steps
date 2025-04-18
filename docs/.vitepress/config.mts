@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { nav, sidebar } from './router'
 import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
-
-import { nav, sidebar } from './router'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

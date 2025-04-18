@@ -1,28 +1,32 @@
+// 框架核心
 import Theme from "vitepress/theme";
-import mediumZoom from 'medium-zoom'; // 引入放大镜
 import { nextTick, onMounted, watch } from 'vue';
 import { inBrowser, useData, useRoute } from 'vitepress';
-import ElementPlus from "element-plus"; // 引入组件库
-import "element-plus/dist/index.css"; // 引入样式
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'; // 引入图标库
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import { NProgress } from 'nprogress-v2/dist/index.js'; // 进度条组件
-import DataPanel from "./components/DataPanel.vue" // 不蒜子组件
-import busuanzi from 'busuanzi.pure.js' // 不蒜子统计
 
-import 'nprogress-v2/dist/index.css'; // 进度条样式
-import 'virtual:group-icons.css'; //代码组样式
-import './style/var.scss';  // 引入全局样式
-import './style/blur.scss'; // 引入毛玻璃效果样式
-import "element-plus/dist/index.css"; // 引入 elementPlus 样式
-import './style/index.scss'; // 引入自定义样式
-import Confetti from "./components/Confetti.vue"; // 引入五彩纸屑样式组件
+// 第三方库
+import mediumZoom from 'medium-zoom';                           // mediumZoom图片放大镜
+import ElementPlus from "element-plus";                         // ElementPlus组件库
+import busuanzi from 'busuanzi.pure.js';                        // 不蒜子访问量统计
+import Confetti from "./components/Confetti.vue";               // 五彩纸屑组件
+import DataPanel from "./components/DataPanel.vue";             // 不蒜子组件
+import { NProgress } from 'nprogress-v2/dist/index.js';         // 进度条组件
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';  // 评论插件
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'; // 图标库
+
+//样式文件
+import './style/blur.scss';                                     // 毛玻璃效果
+import './style/index.scss';                                    // 自定义样式
+import 'virtual:group-icons.css';                               // 代码组样式
+import 'nprogress-v2/dist/index.css';                           // 跳转进度条
+import "element-plus/dist/index.css";                           // 组件库样式
 
 
 export default {
   ...Theme,
   enhanceApp({ app, router }) {
     app.use(ElementPlus); // 注册组件库
+    
+    app.component("Confetti", Confetti); // 注册五彩纸屑组件
     app.component('DataPanel' , DataPanel) // 注册不蒜子组件
     // 注册图标库
     for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
@@ -58,21 +62,18 @@ export default {
     const { frontmatter } = useData();
         
     giscusTalk({
-      repo: 'Leonardo-tao/Steps', //仓库
-      repoId: 'R_kgDOOWKXuw', //仓库ID
-      category: 'General', // 讨论分类
-      categoryId: 'DIC_kwDOOWKXu84CpNAe', //讨论分类ID
-      mapping: 'pathname',
-      inputPosition: 'bottom',
-      lang: 'zh-CN',
+        repo: 'Leonardo-tao/Steps',           // 仓库
+        repoId: 'R_kgDOOWKXuw',               // 仓库ID
+        category: 'General',                  // 讨论分类
+        categoryId: 'DIC_kwDOOWKXu84CpNAe',   // 讨论分类ID
+        mapping: 'pathname',
+        inputPosition: 'bottom',
+        lang: 'zh-CN',
       }, 
       {
         frontmatter, route
       },
-      //默认值为true，表示已启用，此参数可以忽略；
-      //如果为false，则表示未启用
-      //您可以使用“comment:true”序言在页面上单独启用它
-      true
+      true        // 默认值为true(启用),可以使用“comment:true”序言在页面上单独设置
     );
   },
 };

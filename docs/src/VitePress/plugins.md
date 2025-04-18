@@ -9,7 +9,7 @@ npm install medium-zoom
 <br>
 
 在 `.vitepress/theme/index.ts` 中引入以下行
-```ts{3-5,9-21}
+```ts{3-5,9-21} [.vitepress/theme/index.ts]
 import Theme from "vitepress/theme";
 
 import mediumZoom from 'medium-zoom'; // 引入放大镜
@@ -34,9 +34,7 @@ export default {
 };
 ```
 添加完之后，发现放大的图片会被 sidebar 区域遮挡，在 `.vitepress/theme/style/var.css` 中加入如下代码：
-```css
-/* .vitepress/theme/style/var.css */
-
+```css [.vitepress/theme/style/var.css]
 .medium-zoom-overlay {
   z-index: 30;
 }
