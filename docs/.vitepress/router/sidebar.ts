@@ -6,21 +6,21 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   {
     text: "VitePress",
     items: [
-      { text: "初始化", link: "/VitePress/initialize" },
-      { text: "部署到 Github", link: "/VitePress/deploy_github" },
-      { text: "部署到网站", link: "/VitePress/deploy_site" },
-      { text: "插件", link: "/VitePress/plugins" },
+      { text: "初始化", link: "/vitepress/initialize" },
+      { text: "部署到 Github", link: "/vitepress/deploy_github" },
+      { text: "部署到网站", link: "/vitepress/deploy_site" },
+      { text: "插件", link: "/vitepress/plugins" },
     ],
   },
   {
     text: "Components",
     items: [
-      { text: "easySearch", link: "/Components/easySearch" },
-      { text: "navlist", link: "/Components/NavList" }
+      { text: "easySearch", link: "/components/easySearch" },
+      { text: "navlist", link: "/components/navList" }
     ],
   },
   {
     text: "Utils",
-    items: [{ text: "easyTime", link: "/Utils/easyTime/easyTime" }],
+    items: [{ text: "easyTime", link: "/utils/easyTime" }],
   },
 ];

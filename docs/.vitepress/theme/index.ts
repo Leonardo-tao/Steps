@@ -11,7 +11,7 @@ import LinkCard from "./components/LinkCard.vue";               // 链接卡片�
 import Confetti from "./components/Confetti.vue";               // 五彩纸屑组件
 import BackToTop from "./components/BackToTop.vue";             // 返回顶部组件
 import DataPanel from "./components/DataPanel.vue";             // 不蒜子组件
-import MNavLinks from "../../src/Nav/MNavLinks.vue";            // 导航栏组件 
+import MNavLinks from "../../src/nav/MNavLinks.vue";            // 导航栏组件 
 import { NProgress } from 'nprogress-v2/dist/index.js';         // 进度条组件
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';  // 评论插件
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'; // 图标库
