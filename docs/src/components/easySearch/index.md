@@ -17,14 +17,23 @@
 
 ## API
 
-### Attrabutes
+### Attributes
 
-| 属性名         | 说明             | 类型    | 默认值 |
-| -------------- | ---------------- | ------- | ------ |
-| exposingFields | 展示在外的筛选项 | `Array` | `[]`   |
-| fields         | 所有筛选项       | `Array` | `[]`   |
+| 属性名         | 说明             | 类型                      | 默认值 |
+| -------------- | ---------------- | ------------------------- | ------ |
+| exposingFields | 展示在外的筛选项 | `Array<FieldItem>`        | `[]`   |
+| fields         | 所有筛选项       | `Array<FieldItem>`        | `[]`   |
+| operators      | 可选的逻辑符号   | `Array<{label, value}>`   | 预置7种|
 
 
+```ts [FieldItem 结构]
+{
+  label: string,    // 显示名称
+  field: string,    // 字段名
+  type: string,     // 输入类型(input/number/select/date)
+  options?: Array<{label, value}> // 选择型字段的选项
+}
+```
 
 ### events
 
@@ -48,7 +57,4 @@
 
 ### 常见问题
 
-
-
-### 源代码
 

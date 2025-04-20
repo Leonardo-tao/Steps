@@ -54,7 +54,7 @@
 
 <script setup lang="ts">
 import { reactive, computed } from 'vue'
-import { easyTime } from './easyTime'
+import { easyTime } from './index'
 // 配置参数
 const config = reactive({
   type: 'datetime',
