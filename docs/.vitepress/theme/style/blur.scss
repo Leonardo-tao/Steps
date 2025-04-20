@@ -5,63 +5,94 @@ $backgroundImage: (
   dark: radial-gradient(transparent 1px, #1B1B1F 1px)
 );
 
+// 通用透明样式
+@mixin translucent-background {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px);
+}
+
+@mixin nav-bar-background($image) {
+  background-image: map.get($backgroundImage, $image);
+  background-size: 4px 4px;
+  backdrop-filter: saturate(50%) blur(4px);
+}
+
+// 基础样式
 :root {
-  /* 默认 light 模式样式 */
-  /* 首页下滑后导航透明 */
+  /* 公共样式 */
   .VPNavBar:not(.has-sidebar):not(.home.top) {
-    background-color: rgba(255, 255, 255, 0);
-    background-image: map.get($backgroundImage, light);
-    background-size: 4px 4px;
-    backdrop-filter: saturate(50%) blur(4px);
+    @include nav-bar-background(light);
+    @include translucent-background;
   }
 
   /* 搜索框透明 */
   .DocSearch-Button {
-    background-color: rgba(255, 255, 255, 0);
+    @include translucent-background;
     backdrop-filter: blur(4px);
   }
 
   /* Feature透明 */
   .VPFeature {
     border: none;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 4px 30px 0 rgb(0 0 0 / 15%);
     background-color: transparent;
   }
 
-  /* 文档页侧边栏顶部透明 */
-  .curtain {
-    background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(10px);
+  .curtain, .VPLocalNav {
+    @include translucent-background;
   }
 
+  // 桌面端专属
   @media (min-width: 960px) {
-    /* 文档页导航中间透明 */
     .VPNavBar:not(.home.top) .content-body {
-      background-color: rgba(255, 255, 255, 0);
-      background-image: map.get($backgroundImage, light);
-      background-size: 4px 4px;
-      backdrop-filter: saturate(50%) blur(10px);
+      @include nav-bar-background(light);
+      @include translucent-background;
     }
-  }
-
-  /* 移动端大纲栏透明 */
-  .VPLocalNav {
-    background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(10px);
   }
 }
 
-/* 暗色模式适配 */
-.dark {
-  /* 首页下滑后导航透明 - 暗色 */
+// Light 模式专属
+.light {
   .VPNavBar:not(.has-sidebar):not(.home.top) {
-    background-image: map.get($backgroundImage, dark);
+    @include nav-bar-background(light);
   }
 
   @media (min-width: 960px) {
-    /* 文档页导航中间透明 - 暗色 */
     .VPNavBar:not(.home.top) .content-body {
-      background-image: map.get($backgroundImage, dark);
+      @include nav-bar-background(light);
     }
+  }
+}
+
+// Dark 模式专属
+.dark {
+  .VPNavBar:not(.has-sidebar):not(.home.top) {
+    @include nav-bar-background(dark);
+  }
+
+  @media (min-width: 960px) {
+    .VPNavBar:not(.home.top) .content-body {
+      @include nav-bar-background(dark);
+    }
+  }
+}
+
+// 通用基础样式
+:root {
+  .VPNavBar:not(.has-sidebar):not(.home.top),
+  .DocSearch-Button,
+  .curtain,
+  .VPLocalNav {
+    @include translucent-background;
+  }
+
+  .VPNavBar:not(.has-sidebar):not(.home.top) {
+    backdrop-filter: saturate(50%) blur(4px);
+  }
+
+  .VPFeature {
+    border: none;
+    box-shadow: 0 4px 30px 0 rgb(0 0 0 / 15%);
+    background-color: transparent;
   }
 }

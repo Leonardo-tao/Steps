@@ -1,5 +1,7 @@
 import type { DefaultTheme } from 'vitepress'
 
+/* 可通过 collapsed: true 来控制菜单是否可折叠 */
+
 export const sidebar: DefaultTheme.Config['sidebar'] = [
   {
     text: "VitePress",
@@ -12,10 +14,13 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   },
   {
     text: "Components",
-    items: [{ text: "easySearch", link: "/easySearch" }],
+    items: [
+      { text: "easySearch", link: "/Components/easySearch" },
+      { text: "navlist", link: "/Components/NavList" }
+    ],
   },
   {
     text: "Utils",
-    items: [{ text: "easyTime", link: "/utils/easyTime/easyTime" }],
+    items: [{ text: "easyTime", link: "/Utils/easyTime/easyTime" }],
   },
 ];

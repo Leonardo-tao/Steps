@@ -7,26 +7,30 @@ hero:
   text: "Think big, but start small"
   image:
     src: /logo.svg
-    alt: VitePress Logo
+    alt: Steps Logo
   actions:
     - theme: brand
-      text: Quick Start
+      text: 快速开始
       link: /VitePress/initialize
     - theme: alt
-      text: Todos
+      text: 学习笔记
       link: /Todos/todos
 
 features:
   - icon: ⚡️
     title: VitePress 学习
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: VitePress 站点配置及部署
+    link: /VitePress/initialize
   - icon: 🛠️
     title: VitePress 插件
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - icon: 📦
+    details: VitePress 插件使用及自定义
+    link: /VitePress/plugins
+  - icon: 🧩
     title: 组件库
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 工作/学习中开发的组件合集
+    link: /Components/EasySearch
 ---
 
-<Confetti :style="'confetti'" />
+<DataPanel />
+<Confetti style="confetti" />
 

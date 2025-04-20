@@ -69,7 +69,7 @@ npx vitepress init
 
 默认情况下，VitePress 将其开发服务器缓存存储在 `.vitepress/cache` 中，并将生产构建输出存储在 `.vitepress/dist` 中。如果使用 Git，应该将它们添加到 `.gitignore` 文件中：
 
-```gitignore
+```gitignore [.gitignore]
 node_modules
 .DS_Store
 dist
@@ -86,7 +86,7 @@ cache
 
 运行前需要保证 `package.json` 中含有如下脚本：
 
-```json
+```json [package.json]
 {
   "scripts": {
     "docs:dev": "vitepress dev",

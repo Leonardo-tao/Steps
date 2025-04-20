@@ -140,7 +140,7 @@ tar: Error is not recoverable: exiting now
 
 是由于选择了不同的根目录，需要在 `deploy.yml` 中第 53 行修改一下打包路径
 
-```yaml{4}
+```yaml{4} [deploy.yml]
 - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
