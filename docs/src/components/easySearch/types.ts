@@ -4,7 +4,7 @@ export type ButtonType = 'primary' | 'danger' | 'warning' | 'success' | 'info'
 export interface FieldItem {
     label: string
     field: string
-    type: 'input' | 'number' | 'select' | 'date'
+    type: 'input' | 'number' | 'select' | 'date' | 'datetime'
     options?: Array<{ label: string; value: string }>
 }
 

@@ -8,7 +8,7 @@
       <el-form-item>
         <el-button :icon="Operation">更多(0)</el-button>
         <el-button :icon="Search" plain type="primary">搜索</el-button>
-        <el-button :icon="Refresh" plain type="danger" @click="handleReset">重置</el-button>
+        <el-button :icon="Refresh" plain type="danger">重置</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -37,10 +37,6 @@ const exposedFields = reactive([
     value: ""
   }
 ])
-
-const handleReset = () => {
-  exposedFields.forEach(item => item.value = "")
-}
 </script>
 
 <style scoped lang="scss">

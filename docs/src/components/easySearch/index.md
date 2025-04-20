@@ -1,10 +1,25 @@
 # easySearch
 
-一个可用于多条件查询的高级搜索组件
+一个可用于多条件查询的高级搜索组件(基于 [ElementPlus](https://github.com/element-plus/element-plus))
 
 ## 模板预览
 
-通过给 `easySearch` 传入 `exposingFields` ，展示外面的默认筛选项
+在 `easySearch` 中传入 `exposingFields` ，作为默认筛选项
+```vue [demo.vue]
+<template>
+  <EasySearch :exposingFields="exposingFields" />
+</template>
+
+<script setup lang="ts">
+import { reactive } from 'vue';
+import { EasySearch } from 'EasySearch';
+
+const exposingFields = reactive([
+  { label: '姓名', field: 'name', type: 'input' },
+  { label: '年龄', field: 'age', type: 'number' }, 
+])
+</script>
+```
 <demo vue="./demo.vue" scope="global" />
 
 <br>
