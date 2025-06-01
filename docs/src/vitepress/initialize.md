@@ -104,4 +104,4 @@ npm run docs:dev
 
 ## 大功告成🎉
 预览网站（通常是 `localhost:5173` ）
-![image-20250412203825167](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250412203825167.png)
+![image-20250412203825167](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250412203825167.png)
