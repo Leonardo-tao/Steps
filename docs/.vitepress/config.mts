@@ -5,7 +5,7 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/Steps/",
+  base: "/",
   lang: "zh-CN",
   title: "Steps",
   description: "Think big, but start small",
