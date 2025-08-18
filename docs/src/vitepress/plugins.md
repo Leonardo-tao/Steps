@@ -3,8 +3,8 @@
 
 ## 图片放大镜
 引入 [medium-zoom](https://github.com/francoischalifour/medium-zoom) 插件
-```sh
-npm install medium-zoom
+```bash [npm]
+$ npm install medium-zoom
 ```
 <br>
 

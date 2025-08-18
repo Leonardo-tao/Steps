@@ -5,8 +5,8 @@
 需要满足：[Node.js](https://nodejs.org/zh-cn) 版本 > 18
 
 
-```sh
-npm add -D vitepress
+```bash [npm]
+$ npm add -D vitepress
 ```
 
 
@@ -15,13 +15,13 @@ npm add -D vitepress
 
 执行以下命令，初始化 VitePress 项目
 
-```sh
-npx vitepress init
+```bash [npm]
+$ npx vitepress init
 ```
 
 按照需求配置初始化模板：
 
-```sh
+```bash [cmd]
 ┌  Welcome to VitePress!
 │
 ◇  Where should VitePress initialize the config?(选择项目根目录)
@@ -51,7 +51,7 @@ npx vitepress init
 
 按照上述配置完成后，目录结构如下：
 
-```
+``` bash
 .
 ├─ .vitepress
 │  └─ config.mts
@@ -98,8 +98,8 @@ cache
 
 使用以下命令运行：
 
-```sh
-npm run docs:dev
+```bash [npm]
+$ npm run docs:dev
 ```
 
 ## 大功告成🎉

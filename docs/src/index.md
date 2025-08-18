@@ -14,7 +14,7 @@ hero:
       link: /vitepress/initialize
     - theme: alt
       text: 学习笔记
-      link: /
+      link: /ascend
 
 features:
   - icon: ⚡️

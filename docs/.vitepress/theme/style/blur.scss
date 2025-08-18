@@ -28,12 +28,11 @@ $backgroundImage: (
   /* 搜索框透明 */
   .DocSearch-Button {
     @include translucent-background;
-    backdrop-filter: blur(4px);
   }
 
   /* Feature透明 */
   .VPFeature {
-    border: none;
+    // border: none;
     box-shadow: 0 4px 30px 0 rgb(0 0 0 / 15%);
     background-color: transparent;
   }
@@ -74,25 +73,5 @@ $backgroundImage: (
     .VPNavBar:not(.home.top) .content-body {
       @include nav-bar-background(dark);
     }
-  }
-}
-
-// 通用基础样式
-:root {
-  .VPNavBar:not(.has-sidebar):not(.home.top),
-  .DocSearch-Button,
-  .curtain,
-  .VPLocalNav {
-    @include translucent-background;
-  }
-
-  .VPNavBar:not(.has-sidebar):not(.home.top) {
-    backdrop-filter: saturate(50%) blur(4px);
-  }
-
-  .VPFeature {
-    border: none;
-    box-shadow: 0 4px 30px 0 rgb(0 0 0 / 15%);
-    background-color: transparent;
   }
 }
