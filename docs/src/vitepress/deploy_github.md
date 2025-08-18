@@ -4,13 +4,13 @@
 
 1. 首先，添加一个 `base` 选项，设置根路径，格式为 `/Github仓库名/` ，我这里填写 `/test/`
 
-![image-20250413160100921](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413160100921.png)
+![image-20250413160100921](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413160100921.png)
 
 <br>
 
 2. 在根目录下新建一个名为 `.nojekyll` 的空文件
 
-![image-20250413152946966](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413152946966.png)
+![image-20250413152946966](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413152946966.png)
 
 <br>
 
@@ -89,7 +89,7 @@ jobs:
 
 最终目录结构如下：
 
-![image-20250413153033287](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413153033287.png)
+![image-20250413153033287](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413153033287.png)
 
 <br>
 
@@ -99,12 +99,12 @@ jobs:
 
 本地提交，发布分支并上传到 `Github` 仓库
 
-![image-20250413152035470](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413152035470.png)
+![image-20250413152035470](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413152035470.png)
 
 <br>
 
 上传完成，在 `Github` 中查看：
-![image-20250413153127605](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413153127605.png)
+![image-20250413153127605](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413153127605.png)
 
 <br>
 
@@ -114,11 +114,11 @@ jobs:
 
 进入到 `Settings ` > `Pages` ，选择 `Github Actions` ，等待部署完成就好了
 
-![image-20250413154748830](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413154748830.png)
+![image-20250413154748830](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413154748830.png)
 
 <br>
 
-![image-20250413154805869](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413154805869.png)
+![image-20250413154805869](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413154805869.png)
 
 <br>
 
@@ -127,7 +127,7 @@ jobs:
 
 现在可通过 `yourName.github.io/仓库名/` 来访问 `VitePress` 了，并且在每次提交代码后都会自动构建和部署
 
-![image-20250413154841909](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/image-20250413154841909.png)
+![image-20250413154841909](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/image-20250413154841909.png)
 
 ## 遇到的问题
 

@@ -46,4 +46,4 @@ export default {
 
 测试效果：
 
-![A005](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo/img/A005.jpg)
+![A005](https://cdn.jsdelivr.net/gh/Leonardo-tao/PicGo@main/img/A005.jpg)

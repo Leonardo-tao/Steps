@@ -5,15 +5,15 @@ import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-i
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/Steps/",
+  base: "/",
   lang: "zh-CN",
   title: "Steps",
   description: "Think big, but start small",
   lastUpdated: true,
   srcDir: "./src",
-  head: [["link", { rel: "icon", href: "/Steps/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   sitemap: {
-    hostname: "https://leonardo-tao.github.io/Steps/",
+    hostname: "https://docs.codercat.top/",
   },
   themeConfig: {
     // 首页Logo
@@ -75,7 +75,7 @@ export default defineConfig({
       },
     },
     editLink: {
-      pattern: "https://github.com/Leonardo-tao/Steps/edit/main/docs/:path",
+      pattern: "https://github.com/Leonardo-tao/Steps/edit/main/docs/src/:path",
       text: "在 GitHub 上编辑此页",
     },
     lastUpdated: {
