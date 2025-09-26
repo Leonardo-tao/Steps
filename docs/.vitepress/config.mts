@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { nav, sidebar } from './router'
 import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import icons from "./theme/icons";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -116,7 +117,7 @@ export default defineConfig({
       },
     },
     plugins: [
-      groupIconVitePlugin(), //代码组图标
+      groupIconVitePlugin(icons), //代码组图标
     ],
   },
 });
